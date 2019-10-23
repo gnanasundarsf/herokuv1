@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Report } from './../models/Report.interface';
 
-let proxyURL = 'https://voiceassistant-dev-ed.my.salesforce.com/services/apexrest';
+let proxyURL = 'hdialogflowvoice-developer-edition.na113.force.com/v/services/apexrest';
 
 export class SalesforceProxy {
 
