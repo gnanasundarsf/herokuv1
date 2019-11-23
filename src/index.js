@@ -6,7 +6,7 @@ const axios = require('axios');
 const { dialogflow, Image } = require('actions-on-google');
 const app = dialogflow();
 
-// Register show.report handler
+// Register show.report handler 
 app.intent('show.report', (conv, {reportName, filterField, filterOperator, filterValue}) => {
     // Get the Report name and the Filter.
     let reportFilter = {
@@ -17,7 +17,7 @@ app.intent('show.report', (conv, {reportName, filterField, filterOperator, filte
 
     // Call Salesforce.
     let response =  axios.post(
-        'https://sfbottest-developer-edition.na78.force.com/services/apexrest/showreport', 
+        'https://dialogflowvoice-developer-edition.na113.force.com/v/services/apexrest/Dialogflow', 
         {name: reportName, filter: reportFilter}, 
         {headers: {'Content-Type': 'application/json'}}
     );
