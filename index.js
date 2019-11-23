@@ -17,7 +17,7 @@ app.intent('show.report', (conv, {reportName, filterField, filterOperator, filte
 
     // Call Salesforce.
     let response =  axios.post(
-        'https://sfbottest-developer-edition.na78.force.com/services/apexrest/showreport', 
+        'https://dialogflowvoice-developer-edition.na113.force.com/v/services/apexrest/Dialogflow', 
         {name: reportName, filter: reportFilter}, 
         {headers: {'Content-Type': 'application/json'}}
     );
